@@ -6,7 +6,6 @@ import {
   Container,
   Carrossel,
   Navigator,
-  Imagens,
 } from "./styles";
 import { FaSearch, FaYoutube } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
@@ -24,6 +23,8 @@ import { ListaBotoes } from "./components/ListaBotoes";
 import { DoubleBlock } from "./components/DoubleBlock"
 import { normies, suvs, performance } from "./constants/cars";
 import { Certificado } from "./components/Certificado";
+import {Cards} from "./components/Cards";
+
 
 const debug = () => {
   console.log("Teste");
@@ -182,6 +183,11 @@ function App() {
 
       <Certificado/>
       
+      
+      {/*-------------------------------- Cards --------------------------------*/}
+
+      <Cards/>  
+
     </Container>
   );
 }
