@@ -200,7 +200,7 @@ function App() {
 
         <div className="Line">Eae</div>
 
-        <div className="Policy">Blz?</div>
+        <div className="Policy">Blz camarada?</div>
 
 
 
