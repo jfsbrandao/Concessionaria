@@ -223,3 +223,37 @@ export const LogoSubaru = styled.div`
         height:40px;
     }
 `;
+
+
+export const RollUpButton = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d252c;
+    height: 70px;
+    .Button{
+        transition: all 0.5s;
+        color: black;
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: #1971d4;
+            cursor: pointer;
+            color: white
+        }
+    }
+`
+
+
+export const FootInformation = styled.div`
+    padding: 25px 48px 0;
+    background-color: #1d252c;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+`

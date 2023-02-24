@@ -6,6 +6,8 @@ import {
   Container,
   Carrossel,
   Navigator,
+  RollUpButton,
+  FootInformation
 } from "./styles";
 import { FaSearch, FaYoutube } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
@@ -24,17 +26,11 @@ import { DoubleBlock } from "./components/DoubleBlock"
 import { normies, suvs, performance } from "./constants/cars";
 import { Certificado } from "./components/Certificado";
 import {Cards} from "./components/Cards";
+import {MdKeyboardArrowUp} from 'react-icons/md'
 
-
-const debug = () => {
-  console.log("Teste");
-};
-const debug1 = () => {
-  console.log("Teste1");
-};
-const debug2 = () => {
-  console.log("Teste2");
-};
+const rollUpInTime = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 const responsive = {
   superLargeDesktop: {
@@ -58,7 +54,7 @@ const responsive = {
 
 /*------------------------------------------------------------------------------------------------------------*/
 function App() {
-  const { isOpen, onToggle } = useDisclosure();
+
 
   return (
     <Container>
@@ -187,6 +183,30 @@ function App() {
       {/*-------------------------------- Cards --------------------------------*/}
 
       <Cards/>  
+
+      
+      {/*-------------------------------- Bottom --------------------------------*/}
+
+      <RollUpButton>
+          <div className="Button" onClick={rollUpInTime}>
+            <MdKeyboardArrowUp fontSize={30}/>
+          </div>
+      </RollUpButton>
+
+      <FootInformation>
+        Minha pica flamejante
+
+        <div className="Informations">Opa</div>
+
+        <div className="Line">Eae</div>
+
+        <div className="Policy">Blz?</div>
+
+
+
+
+
+      </FootInformation>
 
     </Container>
   );
